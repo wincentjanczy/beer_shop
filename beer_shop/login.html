@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bierhandel Willems Beershop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Julius Sans One" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index_bs.html"><span class="glyphicon glyphicon-home"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="index_bs.html">BEER
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="trappist.html">Trappist</a></li>
+            <li><a href="#">Abbey</a></li>
+            <li><a href="#">Gueuze</a></li> 
+            <li><a href="#">Lambic</a></li> 
+            <li><a href="#">Other</a></li> 
+          </ul>
+        </li>
+        <li><a href="#wines">WINES & SPIRITS</a></li>
+        <li><a href="#cart">VIEW CART</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="login.html">My account/Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container container-intro">
+  <h3>Log in or create an account</h3>
+  <br>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#login">Log in</a></li>
+    <li><a data-toggle="tab" href="#reg">Register</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="login" class="tab-pane fade in active">
+      <p>Log in if you have an account</p>
+      <form>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter e-mail">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    <div id="reg" class="tab-pane fade">
+      <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple addresses, view and track your orders in your account, and more.</p>
+      <div class="panel panel-default">
+        <div class="panel-heading">ACCOUNT INFORMATION</div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group col-md-6">
+            <label for="firstname">First name:</label>
+            <input type="text" class="form-control" id="firstname" placeholder="First name">
+            </div>
+            <div class="form-group col-md-6">
+            <label for="lastname">Last name:</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Last name">
+            </div>
+            <div class="form-group col-md-6">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="E-mail">
+            </div>
+            <div class="form-group col-md-6">
+            <label for="phone">Telephone:</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Telephone">
+            </div>
+            <div class="form-group col-md-4">
+            <label for="street">Street name:</label>
+            <input type="text" class="form-control" id="street" placeholder="Street name">
+            </div>
+            <div class="form-group col-md-4">
+            <label for="post">ZIP/Postal code:</label>
+            <input type="number" class="form-control" id="post" placeholder="ZIP/Postal code">
+            </div>
+            <div class="form-group col-md-4">
+            <label for="country">Country:</label>
+            <select class="form-control" id="country">
+              <option>US</option>
+              <option>EU</option>
+              <option>Other</option>
+            </select>
+            </div>
+            <div class="form-group col-md-4">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+            <div class="form-group col-md-4">
+            <label for="">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirm" placeholder="Confirm password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> By registering an account, I accept the general terms & conditions and confirm that I have read the disclaimer</label>
+            </div>
+              <button type="submit" class="btn btn-default">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer text-center">
+  <div class="container">
+    <p>Bierhandel Willems Beershop. Designed by Vins</p>
+  </div>
+</footer>
+
+</body>
+</html>
